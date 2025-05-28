@@ -1,0 +1,13 @@
+[Unit]
+Description=Camera Stream Web Service
+After=network.target
+
+[Service]
+ExecStart=/home/youruser/camera_stream/start_stream.sh
+WorkingDirectory=/home/youruser/camera_stream
+Restart=always
+User=youruser
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
