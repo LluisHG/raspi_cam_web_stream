@@ -6,8 +6,7 @@ setup(
     packages=find_packages(where="app"),
     package_dir={"": "app"},
     install_requires=[
-        "flask",
-        "opencv-python"
+        "flask"
     ],
     entry_points={
         "console_scripts": [
