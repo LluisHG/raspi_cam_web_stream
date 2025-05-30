@@ -2,6 +2,11 @@
 echo "cd /home/lluis3d/raspi_cam_web_stream/"
 cd /home/lluis3d/raspi_cam_web_stream/
 
+echo "Installing application dependencies..."
+sudo apt update
+sudo apt upgrade -y
+sudoa apt install python3-opencv
+
 echo "Installing python environment..."
 python3 -m venv venv
 echo "Done"
@@ -16,3 +21,5 @@ echo "Done setupy"
 
 pip install -r requirements.txt
 echo "Done requirements"
+
+source deactivate
