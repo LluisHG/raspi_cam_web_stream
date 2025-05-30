@@ -8,7 +8,7 @@ sudo apt upgrade -y
 sudoa apt install python3-opencv
 
 echo "Installing python environment..."
-python3 -m venv venv
+python3 -m venv --system-site-packages venv
 echo "Done"
 
 echo "Activating environment..."
